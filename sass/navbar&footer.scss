@@ -142,7 +142,9 @@ hr{
 footer{
     background: #ffffff;
     color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 40px 100px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     h3{
