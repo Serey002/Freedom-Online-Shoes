@@ -1,1 +1,1 @@
-/*# sourceMappingURL=about.main.css.map */
+main{padding:0px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:60px}main .about{background-image:url(../images/bannerabout.png);background-size:cover;text-align:end;color:#fcae47;padding:130px 80px;width:100%;height:80vh;font-size:30px;display:flex;flex-direction:column;gap:10px}main .about h1{color:orange}/*# sourceMappingURL=about.main.css.map */
