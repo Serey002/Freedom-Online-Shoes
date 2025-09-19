@@ -4,7 +4,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 .home{
     background-image: url(../images/bannerhome.png);
@@ -104,13 +104,12 @@ main{
 }
 .promo-card {
     background: linear-gradient(135deg,#e8edf0 0%, #fdfdfd 100%);
-    border-radius: 20px;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    padding: 40px 100px;
+    // box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     overflow: hidden;
     position: relative;
     .promo-text {
