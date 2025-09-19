@@ -1,5 +1,10 @@
 main{
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .home{
     background-image: url(../images/bannerhome.png);
@@ -18,21 +23,6 @@ main{
         margin-top: 10px;
         display: flex;
         gap: 20px;
-        #btn-buynow{
-            background: orange;
-            color: white;
-            padding: 8px 30px;
-            font-weight: bold;
-            border-radius: 20px;
-            border: none;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        #btn-buynow:hover{
-            background: none;
-            color: orange;
-            border: 2px solid orange;
-        }
         #btn-contactus{
             background: none;
             color: orange;
@@ -49,4 +39,136 @@ main{
         }
     }
 }
-
+#btn-buynow{
+    background: orange;
+    color: white;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+#btn-buynow:hover{
+    background: none;
+    color: orange;
+    border: 2px solid orange;
+}
+.top-picks{
+    padding: 0px 100px;
+    h2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .card-top-picks{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card-top-pick{
+            .star{
+                margin-left: 40px;
+                i{
+                    color: orange;
+                }
+            }
+            padding:0px 20px;
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px lightgray;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0px 0px 5px rgb(221, 221, 221);
+                transform: scale(1.05);
+            }
+            img{
+                width: 90%;
+                height: 200px;
+            }
+            
+            padding: 10px;
+            h3{
+                margin: 10px 0px;
+            }
+            p{
+                margin-bottom: 10px;
+                color: gray;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.promo-card {
+    background: linear-gradient(135deg,#e8edf0 0%, #fdfdfd 100%);
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
+    .promo-text {
+      max-width: 50%;
+      .promo-text h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #a3b1bb;
+        margin: 0 0 10px;
+      }
+      .promo-text h1 {
+        font-size: 42px;
+        font-weight: 700;
+        margin: 0 0 20px;
+        color: #273444;
+        line-height: 1.2;
+      }
+      .promo-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4a4a4a;
+        margin-bottom: 30px;
+      }
+      .highlight {
+        display: inline-block;
+        background: #273444;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+      .price {
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #273444;
+      }
+    }
+    .promo-image {
+      position: relative;
+      max-width: 50%;
+      .promo-image img {
+        width: 100%;
+        max-width: 480px;
+        transform: rotate(-5deg);
+        filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+      }
+      .circle {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, #b8c7d1 0%, #94a2ac 100%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .circle.one { top: 10%; left: 60%; }
+      .circle.two { bottom: 20%; right: 10%; }
+    }
+}
