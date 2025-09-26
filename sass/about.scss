@@ -23,4 +23,20 @@ main{
             color: orange;
         }
     }
+    .info-about{
+        width: 88%;
+        color: #000000;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .our-mission{
+        width: 88%;
+        color: #000000;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }

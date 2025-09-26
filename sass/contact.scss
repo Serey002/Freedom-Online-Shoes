@@ -131,8 +131,6 @@ main{
         outline: none;
     }
 }
-
-
 .submit-btn {
     background-color: #12143A;
     color: white;
@@ -150,3 +148,8 @@ main{
 .submit-btn:hover{
     background-color: #050b7c;
 } 
+iframe{
+    width: 100%;
+    height: 70vh;
+    border: none;
+}

@@ -155,4 +155,10 @@ main .contact h1 {
 
 .submit-btn:hover {
   background-color: #050b7c;
+}
+
+iframe {
+  width: 100%;
+  height: 70vh;
+  border: none;
 }/*# sourceMappingURL=contact.css.map */

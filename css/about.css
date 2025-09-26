@@ -21,4 +21,20 @@ main .about {
 }
 main .about h1 {
   color: orange;
+}
+main .info-about {
+  width: 88%;
+  color: #000000;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .our-mission {
+  width: 88%;
+  color: #000000;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }/*# sourceMappingURL=about.css.map */
