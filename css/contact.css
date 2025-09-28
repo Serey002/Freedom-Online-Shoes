@@ -22,10 +22,43 @@ main .contact {
 main .contact h1 {
   color: orange;
 }
+main .our-support {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+}
+main .our-support .our-support-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .our-support .support1 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+main .our-support .support1 img {
+  width: 60px;
+  height: 60px;
+}
+main .our-support .support1 .text h3 {
+  margin-bottom: 5px;
+  color: orange;
+}
+main .our-support .support1 .text p {
+  font-size: 14px;
+  color: grey;
+}
+main .map {
+  width: 100%;
+}
 
 .info-contact {
+  background-color: #12143A;
   height: 80vh;
-  padding: 35px 100px;
+  padding: 35px 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -38,7 +71,7 @@ main .contact h1 {
 
 .contact-info {
   width: 45%;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   padding: 30px 50px;
   display: flex;
@@ -57,7 +90,7 @@ main .contact h1 {
   gap: 10px;
 }
 .contact-info .phone-locatio .location .social i {
-  color: gray;
+  color: #c0c2f5;
   padding: 10px 0px;
 }
 

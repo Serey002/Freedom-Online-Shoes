@@ -37,4 +37,48 @@ main .our-mission {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+main .our-mission .mission-vision-value {
+  display: flex;
+  gap: 50px;
+}
+main .our-mission .mission-vision-value .mission, main .our-mission .mission-vision-value .vision, main .our-mission .mission-vision-value .value {
+  flex: 1;
+  text-align: center;
+}
+main .our-mission .mission-vision-value .mission img, main .our-mission .mission-vision-value .vision img, main .our-mission .mission-vision-value .value img {
+  width: 80px;
+  height: 80px;
+}
+main .our-mission .mission-vision-value .mission h3, main .our-mission .mission-vision-value .vision h3, main .our-mission .mission-vision-value .value h3 {
+  margin: 10px 0px;
+  color: orange;
+}
+main .our-mission .mission-vision-value .mission p, main .our-mission .mission-vision-value .vision p, main .our-mission .mission-vision-value .value p {
+  text-align: justify;
+}
+main .shop-picture {
+  width: 88%;
+  display: flex;
+  gap: 30px;
+}
+main .shop-picture img {
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+}
+main .shop-picture .discrep-about-shop {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .shop-picture .discrep-about-shop h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+main .shop-picture .discrep-about-shop p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
 }/*# sourceMappingURL=about.css.map */
