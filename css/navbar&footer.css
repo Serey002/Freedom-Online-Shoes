@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +50,10 @@ nav ul li a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+#shopping-cart {
+  position: relative;
+}
+
 /* hiddent icon menu */
 .menu-toggle {
   display: none;
@@ -59,6 +64,10 @@ nav ul li a {
 ul a:hover {
   color: #f11616;
   transform: translateY(-3px);
+}
+
+#unique {
+  color: #f70e0e;
 }
 
 ul a::after {
@@ -74,6 +83,18 @@ ul a::after {
 
 ul a:hover::after {
   width: 100%;
+}
+
+ul li a select {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+ul li a:hover select {
+  color: #f11616;
 }
 
 i {
@@ -101,6 +122,7 @@ i {
   position: relative;
   right: 40px;
   color: gray;
+  cursor: pointer;
 }
 
 hr {
@@ -111,6 +133,13 @@ hr {
 .login {
   display: flex;
   gap: 10px;
+}
+.login .languge select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -159,7 +188,7 @@ hr {
 }
 
 /* footer */
-footer {
+footer .footer {
   background: #ffffff;
   color: rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -168,71 +197,71 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-footer h3 {
+footer .footer h3 {
   margin-bottom: 15px;
   border-bottom: 2px solid rgb(0, 0, 0);
   padding: 0px 0px 5px 0px;
 }
-footer ul li {
+footer .footer ul li {
   list-style: none;
   margin-bottom: 6px;
 }
-footer ul li a {
+footer .footer ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-footer .socials {
+footer .footer .socials {
   display: flex;
   flex-direction: column;
 }
-footer .socials a {
+footer .footer .socials a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   transition: color 0.3s ease;
 }
-footer .socials a i {
+footer .footer .socials a i {
   color: black;
   margin-bottom: 6px;
 }
-footer .socials a .fa-facebook-f {
+footer .footer .socials a .fa-facebook-f {
   background: #2b5cfa;
   color: white;
   padding: 8px 10px;
   border-radius: 6px;
 }
-footer .socials a .fa-twitter {
+footer .footer .socials a .fa-twitter {
   background: #00acee;
   color: white;
   padding: 7px 7px;
   border-radius: 6px;
 }
-footer .socials a .fa-instagram {
+footer .footer .socials a .fa-instagram {
   background: #e13033;
   color: white;
   padding: 8px;
   border-radius: 6px;
 }
-footer .socials a .fa-linkedin-in {
+footer .footer .socials a .fa-linkedin-in {
   background: #0e76a8;
   color: white;
   padding: 8px;
   border-radius: 6px;
 }
-footer .socials a:hover {
+footer .footer .socials a:hover {
   color: #f11616;
 }
-footer .subscribe {
+footer .footer .subscribe {
   display: flex;
   gap: 10px;
 }
-footer .subscribe input {
+footer .footer .subscribe input {
   padding: 8px 20px;
   border-radius: 20px;
   border: 1px solid gray;
   outline: none;
 }
-footer .subscribe #btn-subscribe {
+footer .footer .subscribe #btn-subscribe {
   background: orange;
   color: white;
   padding: 8px 20px;
@@ -242,8 +271,14 @@ footer .subscribe #btn-subscribe {
   transition: 0.3s;
   cursor: pointer;
 }
-footer .subscribe #btn-subscribe:hover {
+footer .footer .subscribe #btn-subscribe:hover {
   background: none;
   color: orange;
   border: 2px solid orange;
+}
+footer #end-web {
+  text-align: center;
+  margin: 20px 0px;
+  color: gray;
+  font-size: 14px;
 }/*# sourceMappingURL=navbar&footer.css.map */

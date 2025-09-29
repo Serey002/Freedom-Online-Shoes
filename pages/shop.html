@@ -23,7 +23,12 @@
         </div>
         <ul id="menu">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./pages/shop.html">
+                <select name="shop" id="unique">
+                    <option value="">SHOP</option>
+                    <option value="nike-product">NIKE</option>
+                    <option value="">ADIDAS</option>
+                </select></a></li>
             <li><a href="./about.html">ABOUT</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
         </ul>
@@ -38,6 +43,13 @@
                 </button>
                 <button class="btn btn1">Log in</button>
                 <button class="btn btn2">Sign in</button>
+                <div class="languge">
+                    <select name="languge" id="languge">
+                        <option value="en">EN</option>
+                        <option value="kh">KH</option>
+                        <option value="fr">CN</option>
+                    </select>
+                </div>
             </div>
         </div>
     </nav>
@@ -50,11 +62,16 @@
         <div class="product">
             <h2>Our Product</h2>
             <div class="choise-product">
-                <button class="btn-choise">All</button>
-                <button class="btn-choise">Nike</button>
-                <button class="btn-choise">Adidas</button>
+                <a class="btn-choise" href="#">All</a>
+                <a class="btn-choise" href="#nike-product">Nike</a>
+                <a class="btn-choise" href="#adidas-product">Adidas</a>
             </div>
-            <div class="product-card">
+            <div class="product-for">
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kid</a>
+            </div>
+            <div class="product-card" id="nike-product" name="nike-product">
                 <div class="card-top-pick">
                     <div class="star">
                         <i class="fa-solid fa-star"></i>
@@ -62,10 +79,92 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://footlockergrazure.lhscdn.com/uploads/resources/647012/314109068404_01.png-enlarge.png?lm=6ca33f902ba5ee332c91b50b068ff5d5" alt="shoe1">
+                    <h3>Nike Air Force 1 </h3>
+                    <p>High Gray Pearl (Women's) Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <div class="offer">
+                        <p>$109.00</p>
+                        <p><del>$135.00</del></p>
+                        <p><span>21% OFF</span></p>
+                    </div>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://image.goat.com/1000/attachments/product_template_pictures/images/000/037/159/original/624040_143.png.png" alt="shoe1">
+                    <h3>Nike Air Force 1 </h3>
+                    <p>High dark blue Pearl (Women's) Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://static.nike.com/a/images/t_default/fdded470-0ac5-4bd7-b41b-1bb63e161438/custom-nike-air-force-1-mid-by-you-shoes.png" alt="shoe1">
+                    <h3>Nike Air Force 1 </h3>
+                    <p>High Orange Pearl (Women's) Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <div class="offer">
+                        <p>$130.00</p>
+                        <p><del>$150.00</del></p>
+                        <p><span>15% OFF</span></p>
+                    </div>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://static.nike.com/a/images/t_default/2bf173a1-f8c5-4ba5-8f2f-92da46f2a29f/custom-nike-air-force-1-low-by-you-shoes.png" alt="shoe1">
+                    <h3>Nike Air Force 1 </h3>
+                    <p>High Orange Pearl (Women's) Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <div class="offer">
+                        <p>$130.00</p>
+                        <p><del>$150.00</del></p>
+                        <p><span>15% OFF</span></p>
+                    </div>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://static.nike.com/a/images/t_default/20547d52-3e1b-4c3d-b917-f0d7e0eb8bdf/custom-nike-air-force-1-low-by-you-shoes.png" alt="shoe1">
+                    <h3>Nike Air Force 1 </h3>
+                    <p>High Red Pearl (Women's) Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <div class="offer">
+                        <p>$109.00</p>
+                        <p><del>$135.00</del></p>
+                        <p><span>21% OFF</span></p>
+                    </div>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://parspng.com/wp-content/uploads/2023/02/shoespng.parspng.com_-300x300.png" alt="shoe1">
+                    <h3>Nike Air Max</h3>
+                    <p>Running shoes dark blue-green Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <p>$130.00</p>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -76,8 +175,9 @@
                     </div>
                     <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
                     <h3>Nike Air Max 270</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -86,10 +186,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -98,10 +199,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://images.jdmagicbox.com/quickquotes/images_main/nike-mens-footwear-23-07-2021-554-239598588-q56ki.png" alt="shoe1">
+                    <h3>Nike Air Max Genome </h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -110,10 +212,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -122,10 +225,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -134,10 +238,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -146,10 +251,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -158,10 +264,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -170,10 +277,32 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
+                </div>
+            </div>
+            <hr>
+            <div class="product-for">
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kid</a>
+            </div>
+            <div class="product-card" id="adidas-product">
+                <div class="card-top-pick">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
+                    <p>$130.00</p>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -182,10 +311,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -194,10 +324,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -206,10 +337,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
                 <div class="card-top-pick">
                     <div class="star">
@@ -218,140 +350,81 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
+                    <img src="https://pngfile.net/files/preview/1280x1126/11701941830k8nqxsglsd3gv3rwh0zbwfvtjk9nwcsr465npxij1wwycdxdkklslc7946ixsus8gcutcbunhvf1e4h4uuzhuvhxt7rbe0jr8a5e.png" alt="shoe1">
+                    <h3>Nike Suppered Go</h3>
+                    <p>Men Training Trainers Shoes UK 9.5 EUR 44.5 - GENUINE</p>
                     <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
-                </div>
-                <div class="card-top-pick">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="https://thedropdate.com/_next/image?url=https%3A%2F%2Fstatic.sneakerjagers.com%2Fp%2FI78gs64ypgFyP4mScicIAp73dRdiLp2j3NsJWU7h.png&w=3840&q=100" alt="shoe1">
-                    <h3>Nike Air Max 270</h3>
-                    <p>$130.00</p>
-                    <button id="btn-buynow">Shop Now</button>
+                    <button id="btn-buynow">Buy Now</button>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="company">
-            <h3>Company</h3>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Our Shop</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="Brand">
-            <h3>Our Brand</h3>
-            <ul>
-                <li><a href="">Nike</a></li>
-                <li><a href="">Adidas</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <h3>Get Social</h3>
-            <div class="socials">
-                <a href="">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    Facebook
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                    Twitter
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
-                <a href="">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    LinkedIn
-                </a>
+        <div class="footer">
+            <div class="company">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Shop</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="Brand">
+                <h3>Our Brand</h3>
+                <ul>
+                    <li><a href="">Nike</a></li>
+                    <li><a href="">Adidas</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Get Social</h3>
+                <div class="socials">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Shipping & Returns</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter your email" />
+                    <button id="btn-subscribe">Subscribe</button>
+                </div>
             </div>
         </div>
-        <div class="help">
-            <h3>Help</h3>
-            <ul>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms & Conditions</a></li>
-                <li><a href="">Shipping & Returns</a></li>
-                <li><a href="">FAQs</a></li>
-            </ul>
-        </div>
-        <div class="newsletter">
-            <h3>Newsletter</h3>
-            <p>Subscribe to our newsletter to get the latest updates and offers.</p>
-            <div class="subscribe">
-                <input type="email" placeholder="Enter your email" />
-                <button id="btn-subscribe">Subscribe</button>
-            </div>
+        <p id="end-web">© 2025 Fredom Online Shoes All rights reserved.</p>
     </footer>
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+</script>
 </html>

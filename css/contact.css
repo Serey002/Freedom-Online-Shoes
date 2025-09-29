@@ -7,7 +7,7 @@ main {
   gap: 60px;
 }
 main .contact {
-  background-image: url(../images/bannershop.png);
+  background-image: url(../images/banner-contact.png);
   background-size: cover;
   text-align: end;
   color: rgb(252, 174, 71);
