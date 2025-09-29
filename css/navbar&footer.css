@@ -62,12 +62,12 @@ nav ul li a {
 }
 
 ul a:hover {
-  color: #f11616;
+  color: orange;
   transform: translateY(-3px);
 }
 
 #unique {
-  color: #f70e0e;
+  color: orange;
 }
 
 ul a::after {
@@ -77,7 +77,7 @@ ul a::after {
   left: 0;
   width: 0;
   height: 3px;
-  background: #f70e0e;
+  background: orange;
   transition: width 0.3s ease;
 }
 
@@ -277,8 +277,9 @@ footer .footer .subscribe #btn-subscribe:hover {
   border: 2px solid orange;
 }
 footer #end-web {
+  padding: 25px;
+  background: orange;
   text-align: center;
-  margin: 20px 0px;
-  color: gray;
+  color: rgb(255, 255, 255);
   font-size: 14px;
 }/*# sourceMappingURL=navbar&footer.css.map */
