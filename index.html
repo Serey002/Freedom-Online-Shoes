@@ -12,15 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./css/stlye.css">
     <link rel="stylesheet" href="./css/navbar&footer.css">
 </head>
 <body>
     <nav>
         <img src="./images/logo-shop2.png" alt="logo">
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
         <ul id="menu">
             <li><a id="unique" href="#">HOME</a></li>
             <li><a href="./pages/shop.html">
@@ -29,29 +27,32 @@
                     <option value="">Nike</option>
                     <option value="">Adidas</option>
                 </select></a></li>
-            <li><a href="./pages/about.html">ABOUT</a></li>
-            <li><a href="./pages/contact.html">CONTACT</a></li>
-        </ul>
-        <div class="search">
-            <div class="search-input">
-                <input class="input-mail" type="text" name="name" id="name" placeholder="Search" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="login">
-                <button id="openCart" class="floating-cart" aria-label="Open cart">
-                 🛒 <span id="cartCount" class="cart-count">0</span>
-                </button>
-                <button class="btn btn1">Log in</button>
-                <button class="btn btn2">Sign in</button>
-                <div class="languge">
-                    <select name="languge" id="languge">
-                        <option value="en">EN</option>
-                        <option value="kh">KH</option>
-                        <option value="fr">CN</option>
-                    </select>
+                <li><a href="./pages/about.html">ABOUT</a></li>
+                <li><a href="./pages/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="search">
+                <div class="search-input">
+                    <input class="input-mail" type="text" name="name" id="name" placeholder="Search" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="login">
+                    <button id="openCart" class="floating-cart" aria-label="Open cart">
+                        🛒 <span id="cartCount" class="cart-count">0</span>
+                    </button>
+                    <a href="./pages/signin.html" class="btn btn1">Log in</a>
+                    <a href="./pages/signin.html" class="btn btn2">Sign in</a>
+                    <div class="languge">
+                        <select name="languge" id="languge">
+                            <option value="en">EN</option>
+                            <option value="kh">KH</option>
+                            <option value="fr">CN</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
     </nav>
     <main>
         <div class="home">
@@ -211,76 +212,12 @@
         <p id="end-web">© 2025 Fredom Online Shoesiw8 All rights reserved.</p>
     </footer>
     <script>
-                const menuToggle = document.getElementById("menu-toggle");
-        const menu = document.getElementById("menu");
-
-        menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-        menu.style.transition = "all 0.5s ease";
-        });
-
-        // ===== 2. SCROLL ANIMATION =====
-        const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-            entry.target.classList.add("show");
-            }
-        });
-        });
-
-        document.querySelectorAll(".card-top-pick, .promo-card, .promo-card2")
-        .forEach(el => {
-            el.classList.add("hidden"); 
-            observer.observe(el);
-        });
-
-        // ===== 3. BUTTON RIPPLE EFFECT =====
-        document.querySelectorAll("button, a#btn-buynow").forEach(btn => {
-        btn.addEventListener("click", function(e){
-            const ripple = document.createElement("span");
-            ripple.classList.add("ripple");
-            this.appendChild(ripple);
-
-            const x = e.clientX - this.offsetLeft;
-            const y = e.clientY - this.offsetTop;
-            ripple.style.left = x + "px";
-            ripple.style.top = y + "px";
-
-            setTimeout(() => {
-            ripple.remove();
-            }, 600);
-        });
-        });
-
-// ===== 4. CART BUTTON BOUNCE =====
-const cartBtn = document.getElementById("openCart");
-cartBtn.addEventListener("click", () => {
-  cartBtn.classList.add("bounce");
-  setTimeout(() => cartBtn.classList.remove("bounce"), 600);
-});
-        const sections = document.querySelectorAll(
-            ".home, .top-picks, .promo-card, .promo-card2"
-        );
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.animationPlayState = "running";
-            }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(sec => {
-            sec.style.animationPlayState = "paused";
-            observer.observe(sec);
-        });
-        const toggle = document.getElementById('menu-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('menu');
 
-        toggle.addEventListener('click', () => {
+        menuToggle.addEventListener('click', () => {
         menu.classList.toggle('active');
         });
-        
     </script>
 </body>
 </html>

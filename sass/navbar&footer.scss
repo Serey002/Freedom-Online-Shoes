@@ -26,7 +26,6 @@ nav{
 }
 nav img{
     height: 80px;
-    border-radius: 100px;
 }
 nav ul{
     font-size: 18px;
@@ -135,28 +134,26 @@ hr{
     }
 }
 .btn{
+    font-size: 15px;
+    text-decoration: none;
     padding: 6px 20px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
-}
-.btn1{
-    color: rgb(0, 148, 0);
-    font-weight: bold;
-}
-.btn1:hover{
-    background: rgb(0, 148, 0);
+    background: orange;
     color: white;
-}
-.btn2{
-    color: rgb(8, 102, 210);
     font-weight: bold;
+}
+.btn:hover{
+    background: rgb(1, 184, 1);
+    color: white;
 }
 .btn2:hover{
-    background: rgb(8, 102, 210);
+    background: rgb(20, 95, 245);
     color: white;
 }
+
 .floating-cart{
     background: #efeeee;
     border-radius: 20px;
@@ -173,7 +170,6 @@ hr{
     padding: 2px 6px;
     border-radius: 20px;
 }
-
 /* footer */
 footer{
     .footer{
@@ -286,6 +282,67 @@ footer{
 
 /* Phones */
 @media (max-width: 480px) {
+    .floating-cart {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -6px;
+      right: -10px;
+      background: red;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+    nav{
+        background: #ffffffa0;
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(100px);
+        position:sticky;
+        top:0;
+        z-index:50;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 50px;
+        }
+        .login{
+            .btn{
+                display: none;
+            }
+        }
+    }
+    ul {
+        color: white;
+        display: none;
+        flex-direction: column;
+        backdrop-filter:saturate(160%) blur(2px);
+        background:linear-gradient(180deg, rgba(157, 157, 157, 0.578), rgba(28, 41, 74, 0.573));
+        border-bottom:1px solid rgba(255,255,255,.06);
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    .languge{
+        display: none;
+    }
+    .menu-toggle {
+        color: #273444;
+        display: block;
+        margin-left: 60px;
+    }
     footer{
         width: 100%;
         background: #090808;
