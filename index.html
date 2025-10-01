@@ -210,8 +210,77 @@
         </div>
         <p id="end-web">© 2025 Fredom Online Shoesiw8 All rights reserved.</p>
     </footer>
-    <div class="describe-about-coffe">
+    <script>
+                const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        menu.style.transition = "all 0.5s ease";
+        });
+
+        // ===== 2. SCROLL ANIMATION =====
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+            entry.target.classList.add("show");
+            }
+        });
+        });
+
+        document.querySelectorAll(".card-top-pick, .promo-card, .promo-card2")
+        .forEach(el => {
+            el.classList.add("hidden"); 
+            observer.observe(el);
+        });
+
+        // ===== 3. BUTTON RIPPLE EFFECT =====
+        document.querySelectorAll("button, a#btn-buynow").forEach(btn => {
+        btn.addEventListener("click", function(e){
+            const ripple = document.createElement("span");
+            ripple.classList.add("ripple");
+            this.appendChild(ripple);
+
+            const x = e.clientX - this.offsetLeft;
+            const y = e.clientY - this.offsetTop;
+            ripple.style.left = x + "px";
+            ripple.style.top = y + "px";
+
+            setTimeout(() => {
+            ripple.remove();
+            }, 600);
+        });
+        });
+
+// ===== 4. CART BUTTON BOUNCE =====
+const cartBtn = document.getElementById("openCart");
+cartBtn.addEventListener("click", () => {
+  cartBtn.classList.add("bounce");
+  setTimeout(() => cartBtn.classList.remove("bounce"), 600);
+});
+        const sections = document.querySelectorAll(
+            ".home, .top-picks, .promo-card, .promo-card2"
+        );
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.animationPlayState = "running";
+            }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(sec => {
+            sec.style.animationPlayState = "paused";
+            observer.observe(sec);
+        });
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
         
-    </div>
+    </script>
 </body>
 </html>

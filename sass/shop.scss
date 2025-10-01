@@ -44,6 +44,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
     .choise-product{
         display: flex;
         gap: 20px;
@@ -139,6 +141,82 @@ main{
             #btn-buynow{
                 width: 52%;
             }
+        }
+    }
+}
+/* Large tablets */
+@media (max-width: 1200px) {
+  
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    main{
+        .shop{
+            padding:0px 0px;
+            width: 100%;
+            height: 30vh;
+        }
+        .product{
+            .choise-product{
+                margin-left: 20px;
+            }
+        }
+        #nike-product, #adidas-product{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            .card-top-pick{
+                .star{
+                    margin-left: 40px;
+                    i{
+                        color: orange;
+                    }
+                }
+                width: 170px;
+                // padding:0px 15px;
+                // width: 250px;
+                // height: 350px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px lightgray;
+                transition: 0.3s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0px 0px 5px rgb(221, 221, 221);
+                    transform: scale(1.05);
+                }
+                img{
+                    width: 90%;
+                    height: 140px;
+                }
+                h3{
+                    font-size: 12px;
+                }
+                .offer{
+                    p{
+                        font-size: 10px;
+                    }
+                }
+                padding: 10px;
+                p{
+                    font-size: 10px;
+                }
+                #btn-buynow{
+                    width: 100%;
+                    padding: 5px;
+                }
+            }
+        }
+        hr{
+            display: none;
         }
     }
 }

@@ -46,6 +46,8 @@ main .shop h1 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.2s;
 }
 .product .choise-product {
   display: flex;
@@ -140,4 +142,64 @@ main .shop h1 {
 }
 .product .product-card .card-top-pick #btn-buynow {
   width: 52%;
+}
+
+/* Large tablets */
+/* Tablets */
+/* Phones */
+@media (max-width: 480px) {
+  main .shop {
+    padding: 0px 0px;
+    width: 100%;
+    height: 30vh;
+  }
+  main .product .choise-product {
+    margin-left: 20px;
+  }
+  main #nike-product, main #adidas-product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  main #nike-product .card-top-pick, main #adidas-product .card-top-pick {
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+  }
+  main #nike-product .card-top-pick .star, main #adidas-product .card-top-pick .star {
+    margin-left: 40px;
+  }
+  main #nike-product .card-top-pick .star i, main #adidas-product .card-top-pick .star i {
+    color: orange;
+  }
+  main #nike-product .card-top-pick:hover, main #adidas-product .card-top-pick:hover {
+    box-shadow: 0px 0px 5px rgb(221, 221, 221);
+    transform: scale(1.05);
+  }
+  main #nike-product .card-top-pick img, main #adidas-product .card-top-pick img {
+    width: 90%;
+    height: 140px;
+  }
+  main #nike-product .card-top-pick h3, main #adidas-product .card-top-pick h3 {
+    font-size: 12px;
+  }
+  main #nike-product .card-top-pick .offer p, main #adidas-product .card-top-pick .offer p {
+    font-size: 10px;
+  }
+  main #nike-product .card-top-pick p, main #adidas-product .card-top-pick p {
+    font-size: 10px;
+  }
+  main #nike-product .card-top-pick #btn-buynow, main #adidas-product .card-top-pick #btn-buynow {
+    width: 100%;
+    padding: 5px;
+  }
+  main hr {
+    display: none;
+  }
 }/*# sourceMappingURL=shop.css.map */

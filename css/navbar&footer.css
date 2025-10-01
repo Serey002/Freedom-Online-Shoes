@@ -282,4 +282,23 @@ footer #end-web {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 14px;
+}
+
+/* Large tablets */
+/* Tablets */
+/* Phones */
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    background: #090808;
+  }
+  footer .footer {
+    width: 100%;
+    padding: 20px 50px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=navbar&footer.css.map */

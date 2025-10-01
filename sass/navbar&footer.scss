@@ -273,3 +273,30 @@ footer{
         font-size: 14px;
     }
 }
+
+/* Large tablets */
+@media (max-width: 1200px) {
+  
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    footer{
+        width: 100%;
+        background: #090808;
+        .footer{
+            width: 100%;
+            padding:20px 50px;
+            margin-top: 0px;
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+            flex-wrap: wrap; 
+        }
+    }
+}

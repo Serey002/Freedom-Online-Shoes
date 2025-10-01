@@ -63,6 +63,13 @@
             <p>Our team is dedicated to sourcing the best materials and working with reputable brands to bring you shoes that not only look great but also feel great. We prioritize customer satisfaction and strive to provide excellent service, making your shopping experience enjoyable and hassle-free.</p>
             <p>Thank you for choosing Freedom Online Shoes. We look forward to helping you step out in style!</p>
         </div>
+        <div class="our-team">
+            <img src="../images/CEO.png" alt="">
+            <div class="name-ceo">
+                <h3>SEREY PHEM</h3>
+                <p>CEO & Founder</p>
+            </div>
+        </div>
         <div class="our-mission">
             <div class="mission-vision-value">
                 <div class="mission">
@@ -149,5 +156,31 @@
         </div>
         <p id="end-web">© 2025 Fredom Online Shoes All rights reserved.</p>
     </footer>
+    <script>
+        const sections = document.querySelectorAll(
+            ".about, .pn-values, .canteen, .sports, .aerobic, .contact"
+        );
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.animationPlayState = "running";
+            }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(sec => {
+            sec.style.animationPlayState = "paused";
+            observer.observe(sec);
+        });
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+        
+    </script>
 </body>
 </html>
