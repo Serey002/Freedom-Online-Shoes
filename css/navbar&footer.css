@@ -93,7 +93,7 @@ ul li a select {
   cursor: pointer;
 }
 ul li a:hover select {
-  color: #f11616;
+  color: orange;
 }
 
 i {
@@ -182,12 +182,73 @@ hr {
 }
 
 /* footer */
+footer .info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+footer .info-section .info-box {
+  flex: 1;
+  min-width: 200px;
+  margin: 15px;
+  padding: 10px;
+}
+footer .info-section .info-box i {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer .info-section .info-box h1 {
+  color: white;
+}
+footer .info-section .info-box h3 {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .info-section .info-box p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+}
+footer .info-section .card-logo {
+  height: 25px;
+  margin: 5px;
+}
+footer .info-section .paypal-logo {
+  height: 30px;
+  margin-top: 10px;
+}
+footer .info-section .trustpilot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .info-section .trust-logo {
+  height: 70px;
+}
+footer .info-section .stars {
+  color: #66cc33;
+  font-size: 24px;
+  margin: 5px 0;
+}
+footer .info-section .trustpilot a {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .info-section .trustpilot a:hover {
+  color: #66cc33;
+}
 footer .footer {
   background: #ffffff;
   color: rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 40px 100px;
-  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -279,6 +340,125 @@ footer #end-web {
 }
 
 /* Large tablets */
+@media (max-width: 1200px) {
+  nav {
+    background: rgba(255, 255, 255, 0.6274509804);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(100px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav .search input {
+    width: 150px;
+  }
+  nav .search .login .languge {
+    display: none;
+  }
+  nav .search .login .btn {
+    padding: 4px 8px;
+  }
+  footer .footer {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 40px 50px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+  }
+  footer .footer h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 0px 0px 5px 0px;
+  }
+  footer .footer ul li {
+    list-style: none;
+    margin-bottom: 6px;
+  }
+  footer .footer ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  footer .footer .socials {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .socials a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+  }
+  footer .footer .socials a i {
+    color: black;
+    margin-bottom: 6px;
+  }
+  footer .footer .socials a .fa-facebook-f {
+    background: #2b5cfa;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  footer .footer .socials a .fa-twitter {
+    background: #00acee;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 6px;
+  }
+  footer .footer .socials a .fa-instagram {
+    background: #e13033;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  footer .footer .socials a .fa-linkedin-in {
+    background: #0e76a8;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  footer .footer .socials a:hover {
+    color: #f11616;
+  }
+  footer .footer .subscribe {
+    display: flex;
+    gap: 10px;
+  }
+  footer .footer .subscribe input {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    outline: none;
+  }
+  footer .footer .subscribe #btn-subscribe {
+    background: orange;
+    color: white;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  footer .footer .subscribe #btn-subscribe:hover {
+    background: none;
+    color: orange;
+    border: 2px solid orange;
+  }
+  footer #end-web {
+    padding: 25px;
+    background: orange;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+  }
+}
 /* Tablets */
 /* Phones */
 @media (max-width: 480px) {
@@ -313,10 +493,14 @@ footer #end-web {
     align-items: center;
   }
   nav img {
+    margin-left: 20px;
     height: 50px;
   }
   nav .login .btn {
     display: none;
+  }
+  nav .search input {
+    width: 150px;
   }
   ul {
     color: white;
@@ -324,13 +508,13 @@ footer #end-web {
     flex-direction: column;
     -webkit-backdrop-filter: saturate(160%) blur(2px);
             backdrop-filter: saturate(160%) blur(2px);
-    background: linear-gradient(180deg, rgba(157, 157, 157, 0.578), rgba(28, 41, 74, 0.573));
+    background: linear-gradient(180deg, rgba(204, 204, 204, 0.578), rgba(138, 139, 141, 0.573));
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     position: absolute;
     top: 60px;
     right: 0px;
-    width: 150px;
-    padding: 10px;
+    width: 100px;
+    padding: 0px;
     border-radius: 10px;
   }
   .languge {
@@ -353,5 +537,25 @@ footer #end-web {
     justify-content: start;
     gap: 30px;
     flex-wrap: wrap;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=navbar&footer.css.map */

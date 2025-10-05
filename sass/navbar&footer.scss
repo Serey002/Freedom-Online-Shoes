@@ -86,7 +86,7 @@ ul{
             }
             &:hover{
                 select{
-                    color: #f11616;
+                    color: orange;
                 }
             }
         }
@@ -172,12 +172,74 @@ hr{
 }
 /* footer */
 footer{
+    .info-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        background-color: #1a1a1a;
+        text-align: center;
+        .info-box {
+            flex: 1;
+            min-width: 200px;
+            margin: 15px;
+            padding: 10px;
+            i {
+                font-size: 30px;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            h1{
+                color: white;
+            }
+            h3 {
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+                color: #ddd;
+                line-height: 1.6;
+            }
+        }
+        .card-logo {
+        height: 25px;
+        margin: 5px;
+        }
+        .paypal-logo {
+        height: 30px;
+        margin-top: 10px;
+        }
+        .trustpilot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .trust-logo {
+        height: 70px;
+        }
+        .stars {
+        color: #66cc33;
+        font-size: 24px;
+        margin: 5px 0;
+        }
+        .trustpilot a {
+        color: #fff;
+        text-decoration: underline;
+        }
+    
+        .trustpilot a:hover {
+        color: #66cc33;
+        }
+    }
     .footer{
         background: #ffffff;
         color: rgb(0, 0, 0);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         padding: 40px 100px;
-        margin-top: 40px;
         display: flex;
         justify-content: space-between;
         h3{
@@ -272,7 +334,131 @@ footer{
 
 /* Large tablets */
 @media (max-width: 1200px) {
-  
+    nav{
+        background: #ffffffa0;
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(100px);
+        position:sticky;
+        top:0;
+        z-index:50;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .search{
+            input{
+                width: 150px;
+            }
+            .login{
+
+                .languge{
+                    display: none;
+                }
+                .btn{
+                    padding: 4px 8px;
+                }
+            }
+        }
+    }
+    footer{
+        .footer{
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 40px 50px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-evenly;
+            h3{
+                margin-bottom: 15px;
+                border-bottom: 2px solid rgb(0, 0, 0);
+                padding: 0px 0px 5px 0px;
+            }
+            ul li{
+                list-style: none;
+                margin-bottom: 6px;
+                a{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+            }
+            .socials{
+                display: flex;
+                flex-direction: column;
+                a{
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    transition: color 0.3s ease;
+                    i{
+                        color: black;
+                        margin-bottom: 6px;
+                    }
+                    .fa-facebook-f{
+                        background: #2b5cfa;
+                        color: white;
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                    }
+                    .fa-twitter{
+                        background: #00acee;
+                        color: white;
+                        padding: 7px 7px;
+                        border-radius: 6px;
+                    }
+                    .fa-instagram{
+                        background: #e13033;
+                        color: white;
+                        padding: 8px;
+                        border-radius: 6px;
+                    }
+                    .fa-linkedin-in{
+                        background: #0e76a8;
+                        color: white;
+                        padding: 8px;
+                        border-radius: 6px;
+                    }
+                }
+                a:hover{
+                    color: #f11616;
+                }
+            }
+            .subscribe{
+                display: flex;
+                gap: 10px;
+                input{
+                    padding: 8px 20px;
+                    border-radius: 20px;
+                    border: 1px solid gray;
+                    outline: none;
+                }
+                #btn-subscribe{
+                    background: orange;
+                    color: white;
+                    padding: 8px 20px;
+                    font-weight: bold;
+                    border-radius: 20px;
+                    border: none;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+                #btn-subscribe:hover{
+                    background: none;
+                    color: orange;
+                    border: 2px solid orange;
+                }
+            }
+        }
+        #end-web{
+            padding: 25px;
+            background: orange;
+            text-align: center;
+            // margin: 20px 0px;
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+        }
+    }
 }
 
 /* Tablets */
@@ -313,11 +499,16 @@ footer{
         justify-content: space-between;
         align-items: center;
         img{
+            margin-left: 20px;
             height: 50px;
         }
         .login{
             .btn{
                 display: none;
+            }
+        }.search{
+            input{
+                width: 150px;
             }
         }
     }
@@ -326,13 +517,13 @@ footer{
         display: none;
         flex-direction: column;
         backdrop-filter:saturate(160%) blur(2px);
-        background:linear-gradient(180deg, rgba(157, 157, 157, 0.578), rgba(28, 41, 74, 0.573));
+        background:linear-gradient(180deg, rgba(204, 204, 204, 0.578), rgba(138, 139, 141, 0.573));
         border-bottom:1px solid rgba(255,255,255,.06);
         position: absolute;
         top: 60px;
         right: 0px;
-        width: 150px;
-        padding: 10px;
+        width: 100px;
+        padding: 0px;
         border-radius: 10px;
       }
     .languge{
@@ -356,4 +547,13 @@ footer{
             flex-wrap: wrap; 
         }
     }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
 }

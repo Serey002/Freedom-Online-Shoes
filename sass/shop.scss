@@ -23,26 +23,31 @@ main{
         }
     }
 }
+hr{
+    padding: 50px 0px;
+}
 #btn-buynow{
     background: orange;
     color: white;
-    padding: 8px 30px;
+    padding: 8px 28px;
     font-weight: bold;
     border-radius: 20px;
     border: none;
     transition: 0.3s;
     cursor: pointer;
     text-decoration: none;
+    border: 2px solid orange;
 }
 #btn-buynow:hover{
     background: none;
     color: orange;
-    border: 2px solid orange;
 }
 .product{
     padding: 0px 80px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     animation: fadeIn 1s ease forwards;
     animation-delay: 0.2s;
@@ -70,7 +75,6 @@ main{
     }
     hr{
         width: 80%;
-        margin-left: 110px;
     }
     .product-for{
         display: flex;
@@ -113,8 +117,8 @@ main{
             justify-content: space-between;
             cursor: pointer;
             &:hover{
-                box-shadow: 0px 0px 5px rgb(221, 221, 221);
-                transform: scale(1.05);
+                box-shadow: 0px 0px 5px orange;
+                // transform: scale(1.05);
             }
             img{
                 width: 90%;
@@ -146,7 +150,27 @@ main{
 }
 /* Large tablets */
 @media (max-width: 1200px) {
-  
+    main{
+        .shop{
+            height: 30vh;
+            h1{
+                color: orange;
+            }
+        }
+    }
+    .product{
+        padding: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.2s;
+        hr{
+            width: 80%;
+            margin-left: 0px;
+        }
+        
+    }
 }
 
 /* Tablets */
@@ -164,10 +188,32 @@ main{
         }
         .product{
             .choise-product{
-                margin-left: 20px;
+            display: flex;
+            gap: 15px;
+            .btn-choise{
+                background: none;
+                color: black;
+                padding: 8px 12px;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 20px;
+                border: 2px solid gray;
+                cursor: pointer;
+                transition: 0.3s;
+                text-decoration: none;
+                span{
+                    display: none;
+                }
+                
+            }
+            .btn-choise:hover{
+                background: orange;
+                color: white;
+                border: none;
             }
         }
-        #nike-product, #adidas-product{
+        }
+        #nike-product, #adidas-product, #convers-product, #newbalance-product{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;

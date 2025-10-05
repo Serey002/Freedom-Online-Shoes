@@ -7,15 +7,24 @@ main{
     gap: 60px;
 }
 .home{
-    background-image: url(../images/bannerhome.png);
+    background-image: url(https://www.jdsports.com.sg/cdn/shop/files/Desktop-Top-Banner_2560_-x-_860-px.gif?v=1758671080&width=2560);
     background-size: cover;
-    padding:130px 80px;
+    padding:80px 80px;
     width: 100%;
     height: 90vh;
     font-size: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    .home-discribe{
+      width: 60%;
+      background: #636765;
+      padding: 100px 50px 180px 50px;
+      h2, p{
+        color: white;
+      }
+
+    }
     
     h1{
         color: orange;
@@ -82,7 +91,96 @@ main{
         // text-align: center;
         margin-bottom: 30px;
     }
-    
+    .product-card {
+      background: #fff;
+      display: flex;
+      width:100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      .product-image {
+        flex: 1;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        img {
+         width: 400px;
+          border-radius: 8px;
+        }
+      }
+      .product-info {
+        flex: 1;
+        padding: 30px;
+        h2 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        .pay-aba-ac{
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          img{
+            height: 20px;
+          }
+        }
+        .price {
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          margin: 15px 0;
+        }
+        .colors {
+          display: flex;
+          gap: 10px;
+          margin: 15px 0;
+          img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          img:hover {
+            border-color: orange;
+          }
+        }
+        .size-select {
+          margin: 15px 0;
+          select {
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+        }
+        .actions {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+          button {
+            background: orange;
+            color: white;
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px solid orange;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          button:hover {
+            background: #ffffff;
+            color: orange;
+          }
+        }
+      }
+    }
     .top-shoes{
       display: flex;
       justify-content: center;
@@ -142,7 +240,7 @@ main{
             cursor: pointer;
             &:hover{
                 box-shadow: 0px 0px 5px rgb(221, 221, 221);
-                transform: scale(1.05);
+                // transform: scale(1.05);
             }
             img{
                 width: 250px;
@@ -284,14 +382,192 @@ main{
     }
 }
 
-/* Large tablets */
+/* tablets */
 @media (max-width: 1200px) {
+  .home{
+    font-size: 20px;
+    height: 34vh;
+    padding: 20px;
+    .home-discribe{
+      width: 56%;
+      background: #636765;
+      padding: 15px 40px 50px 60px;
+      h2, p{
+        color: white;
+      }
+      .btn-home{
+        display: flex;
+        gap: 10px;
+        #btn-buynow, #btn-contactus{
+          padding: 8px 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
   
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-  
+  .top-picks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .top-shoes{
+      display: flex;
+      #top-adidas{
+        width: 300px;
+        height: 250px;
+      }
+      #top-adidas2, #top-nike{
+        height: 190px;
+        width: 200px;
+      }
+    }
+    .card-top-picks{
+      padding: 0px;
+      width: 800px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: start;
+      flex-wrap: wrap;
+      .card-top-pick{
+        width: 188px;
+        height: 300px; 
+      }
+      .card-top-pick{
+        img{
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+    .product-card {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      width:670px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      .product-image {
+        flex: 1;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        img {
+         width: 300px;
+          border-radius: 8px;
+        }
+      }
+      .product-info {
+        flex: 1;
+        padding: 30px;
+        h2 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        .pay-aba-ac{
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          img{
+            width: 200px;
+            height: 20px;
+          }
+        }
+        .price {
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          margin: 15px 0;
+        }
+        .colors {
+          display: flex;
+          gap: 10px;
+          margin: 15px 0;
+          img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          img:hover {
+            border-color: orange;
+          }
+          #hide-img{
+            display: none;
+          }
+        }
+        .size-select {
+          margin: 15px 0;
+          select {
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+        }
+        .actions {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+          button {
+            background: orange;
+            color: white;
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px solid orange;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          button:hover {
+            background: #ffffff;
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+  .promo-card {
+    padding: 40px 50px;
+    .promo-text {
+      max-width: 50%;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.2s;
+    }
+    .promo-image{
+      img {
+        height: 25vh;
+      }
+    }
+  }
+  .promo-card2{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    .promo-text {
+      max-width:70%;
+    }
+    .promo-image {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      img {
+        width: 900px;
+        height: 40vh;
+      }
+    }
+  }
 }
 
 /* Phones */
@@ -304,12 +580,20 @@ main{
     font-size: 8px;
     height: 30vh;
     padding: 20px;
-    .btn-home{
-      display: flex;
-      gap: 10px;
-      #btn-buynow, #btn-contactus{
-        padding: 4px 15px;
-        font-size: 10px;
+    .home-discribe{
+      width: 65%;
+      background: #636765;
+      padding: 20px 50px 28px 50px;
+      h2, p{
+        color: white;
+      }
+      .btn-home{
+        display: flex;
+        gap: 10px;
+        #btn-buynow, #btn-contactus{
+          padding: 4px 15px;
+          font-size: 6px;
+        }
       }
     }
   }
@@ -426,11 +710,3 @@ main{
     }
   }
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeSlide {
-      0% { opacity: 0; transform: translateY(-30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }

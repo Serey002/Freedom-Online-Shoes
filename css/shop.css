@@ -23,28 +23,34 @@ main .shop h1 {
   color: orange;
 }
 
+hr {
+  padding: 50px 0px;
+}
+
 #btn-buynow {
   background: orange;
   color: white;
-  padding: 8px 30px;
+  padding: 8px 28px;
   font-weight: bold;
   border-radius: 20px;
   border: none;
   transition: 0.3s;
   cursor: pointer;
   text-decoration: none;
+  border: 2px solid orange;
 }
 
 #btn-buynow:hover {
   background: none;
   color: orange;
-  border: 2px solid orange;
 }
 
 .product {
   padding: 0px 80px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   animation: fadeIn 1s ease forwards;
   animation-delay: 0.2s;
@@ -73,7 +79,6 @@ main .shop h1 {
 }
 .product hr {
   width: 80%;
-  margin-left: 110px;
 }
 .product .product-for {
   display: flex;
@@ -116,8 +121,7 @@ main .shop h1 {
   color: orange;
 }
 .product .product-card .card-top-pick:hover {
-  box-shadow: 0px 0px 5px rgb(221, 221, 221);
-  transform: scale(1.05);
+  box-shadow: 0px 0px 5px orange;
 }
 .product .product-card .card-top-pick img {
   width: 90%;
@@ -145,6 +149,26 @@ main .shop h1 {
 }
 
 /* Large tablets */
+@media (max-width: 1200px) {
+  main .shop {
+    height: 30vh;
+  }
+  main .shop h1 {
+    color: orange;
+  }
+  .product {
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.2s;
+  }
+  .product hr {
+    width: 80%;
+    margin-left: 0px;
+  }
+}
 /* Tablets */
 /* Phones */
 @media (max-width: 480px) {
@@ -154,14 +178,35 @@ main .shop h1 {
     height: 30vh;
   }
   main .product .choise-product {
-    margin-left: 20px;
+    display: flex;
+    gap: 15px;
   }
-  main #nike-product, main #adidas-product {
+  main .product .choise-product .btn-choise {
+    background: none;
+    color: black;
+    padding: 8px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  main .product .choise-product .btn-choise span {
+    display: none;
+  }
+  main .product .choise-product .btn-choise:hover {
+    background: orange;
+    color: white;
+    border: none;
+  }
+  main #nike-product, main #adidas-product, main #convers-product, main #newbalance-product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  main #nike-product .card-top-pick, main #adidas-product .card-top-pick {
+  main #nike-product .card-top-pick, main #adidas-product .card-top-pick, main #convers-product .card-top-pick, main #newbalance-product .card-top-pick {
     width: 170px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px lightgray;
@@ -172,30 +217,30 @@ main .shop h1 {
     cursor: pointer;
     padding: 10px;
   }
-  main #nike-product .card-top-pick .star, main #adidas-product .card-top-pick .star {
+  main #nike-product .card-top-pick .star, main #adidas-product .card-top-pick .star, main #convers-product .card-top-pick .star, main #newbalance-product .card-top-pick .star {
     margin-left: 40px;
   }
-  main #nike-product .card-top-pick .star i, main #adidas-product .card-top-pick .star i {
+  main #nike-product .card-top-pick .star i, main #adidas-product .card-top-pick .star i, main #convers-product .card-top-pick .star i, main #newbalance-product .card-top-pick .star i {
     color: orange;
   }
-  main #nike-product .card-top-pick:hover, main #adidas-product .card-top-pick:hover {
+  main #nike-product .card-top-pick:hover, main #adidas-product .card-top-pick:hover, main #convers-product .card-top-pick:hover, main #newbalance-product .card-top-pick:hover {
     box-shadow: 0px 0px 5px rgb(221, 221, 221);
     transform: scale(1.05);
   }
-  main #nike-product .card-top-pick img, main #adidas-product .card-top-pick img {
+  main #nike-product .card-top-pick img, main #adidas-product .card-top-pick img, main #convers-product .card-top-pick img, main #newbalance-product .card-top-pick img {
     width: 90%;
     height: 140px;
   }
-  main #nike-product .card-top-pick h3, main #adidas-product .card-top-pick h3 {
+  main #nike-product .card-top-pick h3, main #adidas-product .card-top-pick h3, main #convers-product .card-top-pick h3, main #newbalance-product .card-top-pick h3 {
     font-size: 12px;
   }
-  main #nike-product .card-top-pick .offer p, main #adidas-product .card-top-pick .offer p {
+  main #nike-product .card-top-pick .offer p, main #adidas-product .card-top-pick .offer p, main #convers-product .card-top-pick .offer p, main #newbalance-product .card-top-pick .offer p {
     font-size: 10px;
   }
-  main #nike-product .card-top-pick p, main #adidas-product .card-top-pick p {
+  main #nike-product .card-top-pick p, main #adidas-product .card-top-pick p, main #convers-product .card-top-pick p, main #newbalance-product .card-top-pick p {
     font-size: 10px;
   }
-  main #nike-product .card-top-pick #btn-buynow, main #adidas-product .card-top-pick #btn-buynow {
+  main #nike-product .card-top-pick #btn-buynow, main #adidas-product .card-top-pick #btn-buynow, main #convers-product .card-top-pick #btn-buynow, main #newbalance-product .card-top-pick #btn-buynow {
     width: 100%;
     padding: 5px;
   }

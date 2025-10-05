@@ -27,41 +27,43 @@
                     <option value="">Nike</option>
                     <option value="">Adidas</option>
                 </select></a></li>
-                <li><a href="./pages/about.html">ABOUT</a></li>
-                <li><a href="./pages/contact.html">CONTACT</a></li>
-            </ul>
-            <div class="search">
-                <div class="search-input">
-                    <input class="input-mail" type="text" name="name" id="name" placeholder="Search" />
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="login">
-                    <button id="openCart" class="floating-cart" aria-label="Open cart">
-                        🛒 <span id="cartCount" class="cart-count">0</span>
-                    </button>
-                    <a href="./pages/signin.html" class="btn btn1">Log in</a>
-                    <a href="./pages/signin.html" class="btn btn2">Sign in</a>
-                    <div class="languge">
-                        <select name="languge" id="languge">
-                            <option value="en">EN</option>
-                            <option value="kh">KH</option>
-                            <option value="fr">CN</option>
-                        </select>
-                    </div>
+            <li><a href="./pages/about.html">ABOUT</a></li>
+            <li><a href="./pages/contact.html">CONTACT</a></li>
+        </ul>
+        <div class="search">
+            <div class="search-input">
+                <input class="input-mail" type="text" name="name" id="name" placeholder="Search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="login">
+                <button id="openCart" class="floating-cart" aria-label="Open cart">
+                    🛒 <span id="cartCount" class="cart-count">0</span>
+                </button>
+                <a href="./pages/signin.html" class="btn btn1">Log in</a>
+                <a href="./pages/signin.html" class="btn btn2">Sign in</a>
+                <div class="languge">
+                    <select name="languge" id="languge">
+                        <option >EN</option>
+                        <option >KH</option>
+                        <option >CN</option>
+                    </select>
                 </div>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
     <main>
         <div class="home">
-            <h1>Best Shoes</h1>
-            <h2>Make your day greate with <br> our specail greate</h2>
-            <p>Welcome to our shop online shoes</p>
-            <div class="btn-home">
-                <button id="btn-buynow">Buy Now</button>
-                <button id="btn-contactus">Contact Us</button>
+            <div class="home-discribe">
+                <h1>Best Shoes</h1>
+                <h2>Make your day greate with <br> our specail greate</h2>
+                <p>Welcome to our shop online shoes</p>
+                <div class="btn-home">
+                    <button id="btn-buynow">Buy Now</button>
+                    <button id="btn-contactus">Contact Us</button>
+                </div>
             </div>
         </div>
         <div class="top-picks">
@@ -72,6 +74,44 @@
                 <img id="top-adidas2" src="https://cdn.sanity.io/images/c1chvb1i/production/aa894ce558d03b4f109f88bfe632cbe965b103bd-1100x735.gif" alt="">
             </div>
             <hr>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://media.handball-store.com/catalog/product/cache/small_image/318x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-600_0_0.jpg" alt="Adidas Pureboost 5">
+                </div>
+                <div class="product-info">
+                    <img src="" alt="">
+                    <h2>Low basketball shoes Under Armour Lockdown 7</h2>
+                    <p>Experience ultimate support and lightweight feel with the low-top indoor Under Armour Lockdown 7 shoes, designed for basketball.</p>
+                    <div class="pay-aba-ac">
+                        <img src="https://www.acledabank.com.kh/kh/assets/layout/logo2.png" alt="">
+                        <p>Pay in 4interest-free payment of $15.99</p>
+                    </div>
+                    <p class="price">Starting at: $152.41</p>
+
+                    <div class="colors">
+                        <img src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-100_0_0.jpg" alt="">
+                        <img src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-401_0_0.jpg" alt="">
+                        <img src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-001_0_0.jpg" alt="">
+                        <img src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-600_0_0.jpg" alt="">
+                        <img id="hide-img" src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-410_0_0.jpg" alt="">
+                        <img id="hide-img" src="https://media.handball-store.com/catalog/product/cache/thumbnail/180x/9df78eab33525d08d6e5fb8d27136e95/u/n/under-armour_3027646-102_white-white-metallic-silver_1.jpg" alt="">
+                    </div>
+
+                    <div class="size-select">
+                        <label for="size">Size:</label>
+                        <select id="size">
+                            <option>Choose an Option...</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                        </select>
+                    </div>
+                    <div class="actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
             <div class="card-top-picks">
                 <div class="card-top-pick">
                     <div class="star">
@@ -153,6 +193,44 @@
         </div>
     </main>
     <footer>
+        <div class="info-section">
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>CUSTOMER SERVICE IN CAMBODIA</h3>
+                <p>Contact Us<br>
+                    11 rue Bernard Maris<br>
+                    37270 Montlouis-sur-Loire<br>
+                    Cambodia<br>
+                    +855 9999 777
+                </p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-credit-card"></i>
+                <h3>SECURE PAYMENT</h3>
+                <p>Buy on our website with confidence</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="card-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="card-logo">
+            </div>
+            <div class="info-box">
+                <h1>4x</h1>
+                <h3>PAYMENT IN INSTALMENTS, FREE OF CHARGE</h3>
+                <img src="https://www.acledabank.com.kh/kh/assets/layout/logo2.png" alt="PayPal" class="paypal-logo">
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-truck"></i>
+                <h3>DELIVERY AND RETURN</h3>
+                <p>14 days to change your mind<br>Return an order</p>
+            </div>
+
+            <div class="info-box trustpilot">
+                <img src="./images/logo-shop2.png" alt="Trustpilot" class="trust-logo">
+                <div class="stars">
+                    ⭐⭐⭐⭐☆
+                </div>
+                <p>TrustScore 4.1 | <a href="#">34 reviews</a></p>
+            </div>
+        </div>
         <div class="footer">
             <div class="company">
                 <h3>Company</h3>
@@ -167,7 +245,9 @@
                 <h3>Our Brand</h3>
                 <ul>
                     <li><a href="">Nike</a></li>
-                    <li><a href="">Adidas</a></li>
+                    <li><a href="#adidas-product">Adidas</a></li>
+                    <li><a href="#">Converse</a></li>
+                    <li><a href="#">New Balance</a></li>
                 </ul>
             </div>
             <div class="social">
@@ -209,7 +289,7 @@
                 </div>
             </div>
         </div>
-        <p id="end-web">© 2025 Fredom Online Shoesiw8 All rights reserved.</p>
+        <p id="end-web">© 2025 Fredom Online Shoes All rights reserved.</p>
     </footer>
     <script>
         const menuToggle = document.getElementById('menu-toggle');
